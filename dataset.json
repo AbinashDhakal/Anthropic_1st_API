@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Create a JSON configuration object for an AWS S3 bucket policy that allows public read access to all objects",
+    "format": "json",
+    "solution_criteria": "Must include a valid bucket policy with Principal set to '*', Action set to 's3:GetObject', Effect set to 'Allow', and Resource properly formatted for the bucket"
+  },
+  {
+    "task": "Write a Python function that takes an AWS ARN string and returns the service name (e.g., 's3', 'ec2', 'lambda'). The function should handle ARNs in the standard format: arn:aws:service:region:account-id:resource",
+    "format": "python",
+    "solution_criteria": "Function must correctly parse and extract the service component from various valid AWS ARN formats, handle edge cases, and return the service name as a string"
+  },
+  {
+    "task": "Create a regular expression that validates AWS IAM user names according to AWS naming conventions (alphanumeric characters, hyphens, and underscores only, 1-64 characters in length)",
+    "format": "regex",
+    "solution_criteria": "Regex must match valid IAM usernames (1-64 chars, only alphanumeric, hyphens, underscores), reject invalid characters, and enforce the character length boundaries"
+  }
+]
